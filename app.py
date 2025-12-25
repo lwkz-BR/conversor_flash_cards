@@ -55,7 +55,7 @@ with st.form("conversor_form"):
     raw_input = st.text_area(
         "Cole aqui a resposta completa (incluindo textos e blocos de código):", 
         height=400, 
-        placeholder='Cole aqui a saída que começa com "Aqui estão os cards..." e contém o [ { ... } ]'
+        placeholder='Cole aqui a saída do NotebookLM que contém o [ { ... } ]'
     )
     
     submitted = st.form_submit_button("🚀 Processar e Gerar Flashcards")
@@ -125,4 +125,4 @@ if submitted:
         st.warning("Por favor, cole o conteúdo antes de submeter.")
 
 st.divider()
-st.caption("Desenvolvido para otimizar o estudo de Direito com Inteligência Artificial.")
+st.caption("Desenvolvido por Lucas Bem para otimizar o estudo com Inteligência Artificial.")
